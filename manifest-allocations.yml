@@ -6,8 +6,8 @@ applications:
   memory: 512M
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://registrations-al.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     JAVA_OPTS: '-Xss180k'
   services:
   - tracker-allocations-database
+  - tracker-service-registry

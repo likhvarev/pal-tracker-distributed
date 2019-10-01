@@ -10,3 +10,4 @@ applications:
     JAVA_OPTS: '-Xss180k'
   services:
   - tracker-registration-database
+  - tracker-service-registry
