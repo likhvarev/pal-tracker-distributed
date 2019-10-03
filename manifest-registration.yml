@@ -3,11 +3,10 @@ applications:
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
   - route: registrations-al.cfapps.io
-  memory: 512M
+  memory: 1G
   instances: 1
   env:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
-    JAVA_OPTS: '-Xss200k'
   services:
   - tracker-registration-database
   - tracker-service-registry
